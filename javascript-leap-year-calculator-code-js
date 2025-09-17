@@ -1,0 +1,32 @@
+** start of script.js **
+
+// Outside the function: declare a variable year to check
+let year = 2000; // You can change this to test other years
+
+// Define the function isLeapYear
+function isLeapYear(year) {
+  // Check leap year conditions
+  if (year % 4 === 0) {
+    if (year % 100 === 0) {
+      if (year % 400 === 0) {
+        return year + " is a leap year.";
+      } else {
+        return year + " is not a leap year.";
+      }
+    } else {
+      return year + " is a leap year.";
+    }
+  } else {
+    return year + " is not a leap year.";
+  }
+}
+
+// Call the function with year and store in result
+let result = isLeapYear(year);
+
+// Output the result
+console.log(result);
+
+
+** end of script.js **
+
